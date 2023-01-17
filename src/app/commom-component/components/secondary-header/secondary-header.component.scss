@@ -1,0 +1,24 @@
+@import './../../../../assets/variables/variables';
+
+.navbar-custom-icon {
+    font-size: 2em;
+    color:$navbar-icon-color;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.btn-login a {
+    width: 150px;
+    border: 1px solid $primary-header-background;
+    text-align: center;
+    border-radius: 10px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.btn-login a:hover{
+    background-color: $primary-header-background;
+    color: $primary-header-color;
+}

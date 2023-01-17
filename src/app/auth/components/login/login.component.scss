@@ -1,0 +1,41 @@
+@import '../../../../assets/variables/variables';
+
+.container-fluid {
+
+height: 100vh;
+ background: #ACA2BF;
+  
+}
+
+#loginWrapper {
+  background-color: white;
+  height: 85vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto ;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#formWrapper{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+
+    input[type='email'], input[type='password'], select{
+        border: 1px solid $border-color;
+        
+    }
+    span a {
+        text-decoration: none;
+    }
+
+    button[type='submit'] {
+        text-transform: uppercase;
+    }
+}
