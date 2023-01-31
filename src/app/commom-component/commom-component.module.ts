@@ -6,9 +6,13 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { AuthModule } from '../auth/auth.module';
+import { RouterModule, Routes } from '@angular/router';
 
-
-
+const routes : Routes = [
+  {
+    path:'login', loadChildren:() => import('../auth/auth.module').then(m=>m.AuthModule)
+  }
+];
 @NgModule({
   declarations: [
     PrimaryHeaderComponent,
@@ -20,7 +24,8 @@ import { AuthModule } from '../auth/auth.module';
   ],
   imports: [
     CommonModule,
-    AuthModule
+    AuthModule,
+    RouterModule.forChild(routes)
   ],
   exports:[
     PrimaryHeaderComponent,
